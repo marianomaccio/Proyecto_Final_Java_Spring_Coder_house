@@ -1,5 +1,6 @@
 package com.coderhouse.app.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -32,7 +33,7 @@ public class Person {
 
     @Column
     private String state;
-
-    @OneToMany(mappedBy = "person")
+    @JsonIgnore
+    @OneToMany(mappedBy = "person", cascade = CascadeType.REMOVE)
     private List<DetailSale> detailSaleList;
 }

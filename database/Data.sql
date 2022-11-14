@@ -3,7 +3,7 @@ USE coder_sale_final;
 INSERT INTO persons
 (	name,
 	surname,
-	indentity_document,
+	identity_document ,
 	adress,
 	date_birth,
 	state) values
@@ -17,7 +17,7 @@ INSERT INTO persons
 INSERT INTO persons
 (	name,
 	surname,
-	indentity_document,
+	identity_document ,
 	adress,
 	date_birth,
 	state) values
@@ -31,7 +31,7 @@ INSERT INTO persons
 INSERT INTO persons
 (	name,
 	surname,
-	indentity_document,
+	identity_document ,
 	adress,
 	date_birth,
 	state) values
@@ -45,7 +45,7 @@ INSERT INTO persons
 INSERT INTO persons
 (	name,
 	surname,
-	indentity_document,
+	identity_document ,
 	adress,
 	date_birth,
 	state) values
@@ -59,7 +59,7 @@ INSERT INTO persons
     INSERT INTO persons
 (	name,
 	surname,
-	indentity_document,
+	identity_document ,
 	adress,
 	date_birth,
 	state) values

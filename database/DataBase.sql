@@ -6,7 +6,7 @@ CREATE TABLE persons(
 	id_person 			INT PRIMARY KEY AUTO_INCREMENT,
 	name 				VARCHAR(32) NOT NULL,
 	surname 			VARCHAR(32) NOT NULL,
-	indentity_document 	VARCHAR(30) NOT NULL UNIQUE,
+	identity_document 	VARCHAR(30) NOT NULL UNIQUE,
 	adress 				VARCHAR(64),
 	date_birth 			DATE,
 	state 				ENUM ('VALIDATED','NOT VALIDATED') DEFAULT 'NOT VALIDATED'

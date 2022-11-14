@@ -25,6 +25,6 @@ public class Sale {
     @Column
     private String state;
 
-    @OneToMany(mappedBy = "sale")
+    @OneToMany(mappedBy = "sale", cascade = CascadeType.ALL)
     private List<DetailSale> detailSaleList;
 }
