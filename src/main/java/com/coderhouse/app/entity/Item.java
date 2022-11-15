@@ -1,5 +1,6 @@
 package com.coderhouse.app.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,7 +17,7 @@ public class Item {
 
     @Column
     private String description;
-
-    @OneToMany(mappedBy = "item")
+    @JsonIgnore
+    @OneToMany(mappedBy = "item", cascade = CascadeType.REMOVE)
     private List<Product> productList;
 }

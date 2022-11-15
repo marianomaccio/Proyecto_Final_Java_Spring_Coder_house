@@ -34,6 +34,7 @@ public class Person {
     @Column
     private String state;
     @JsonIgnore
+
     @OneToMany(mappedBy = "person", cascade = CascadeType.REMOVE)
-    private List<DetailSale> detailSaleList;
+    private List<Sale> SaleList;
 }

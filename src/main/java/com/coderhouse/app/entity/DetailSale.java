@@ -20,7 +20,7 @@ public class DetailSale {
     @Column
     private BigDecimal price;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "id_product")
     private Product product;
 
@@ -28,7 +28,4 @@ public class DetailSale {
     @JoinColumn(name = "id_sale")
     private Sale sale;
 
-    @ManyToOne
-    @JoinColumn(name = "id_person")
-    private Person person;
 }

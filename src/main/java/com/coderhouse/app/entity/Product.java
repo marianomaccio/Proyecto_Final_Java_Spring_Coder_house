@@ -1,7 +1,6 @@
 package com.coderhouse.app.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

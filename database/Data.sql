@@ -415,73 +415,83 @@ INSERT INTO products
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'1011-10-10',
 	114121,
-    'VALIDATED'
+    'VALIDATED',
+    2
 );
 
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'1960-10-10',
 	43170.5,
-    'VALIDATED'
+    'VALIDATED',
+    1
 );
 
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'2020-10-10',
 	102700,
-    'VALIDATED'
+    'VALIDATED',
+    3
 );
 
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'150-10-10',
 	130100,
-    'VALIDATED'
+    'VALIDATED',
+    4
 );
 
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'150-10-10',
 	99999999,
-    'CANCELLED'
+    'CANCELLED',
+    4
 );
 
 INSERT INTO sales(
     date,
     price,
-    state
+    state,
+    id_person
 	)VALUES
 (	'100-10-10',
 	315490,
-    'VALIDATED'
+    'VALIDATED',
+    5
 );
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     10000,
     20,
-    1,
     1
     );
 
@@ -489,39 +499,33 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     50.5,
     1,
-    2,
     2
     );
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     40000,
     10,
-    2,
     2
     );
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     100,
     1,
     9,
-    2,
     2
     );
 
@@ -529,26 +533,22 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     20,
     16,
-    2,
     2
     );
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     2,
     1500,
     17,
-    2,
     2
     );
 
@@ -556,13 +556,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     2,
     60.5,
     3,
-    1,
     1
     );
 
@@ -570,13 +568,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     4000,
     12,
-    1,
     1
     );
 
@@ -584,13 +580,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     100000,
     21,
-    1,
     1
     );
 
@@ -598,13 +592,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     10000,
     6,
-    1,
     1
     );
 
@@ -612,13 +604,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     100000,
     11,
-    3,
     3
     );
 
@@ -626,13 +616,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     1000,
     15,
-    3,
     3
     );
 
@@ -640,13 +628,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     200,
     200,
     9,
-    3,
     3
     );
 
@@ -654,13 +640,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     1500,
     17,
-    3,
     3
     );
 
@@ -668,13 +652,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     100,
     13,
-    4,
     4
     );
 
@@ -682,13 +664,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     2,
     10000,
     19,
-    4,
     4
     );
 
@@ -696,13 +676,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     10000,
     6,
-    4,
     4
     );
 
@@ -710,13 +688,11 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     100000,
     21,
-    4,
     4
     );
 
@@ -724,83 +700,71 @@ INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     99999999,
     18,
-    5,
-    4
+    5
     );
 
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     2,
     10,
     5,
-    6,
-    5
+    6
     );
 
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     10000,
     6,
-    6,
-    5
+    6
     );
 
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     3,
     99990,
     22,
-    6,
-    5
+    6
     );
 
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     50,
     10,
     8,
-    6,
-    5
+    6
     );
 
 INSERT INTO detail_sale(
     quantity,
     price,
     id_product,
-    id_sale,
-    id_person ) VALUES
+    id_sale ) VALUES
     (
     1,
     5000,
     7,
-    6,
-    5
+    6
     );
 

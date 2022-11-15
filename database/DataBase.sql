@@ -33,7 +33,9 @@ CREATE TABLE sales(
 	id_sale INT PRIMARY KEY AUTO_INCREMENT,
     date 	DATE,
     price   DOUBLE DEFAULT 0,
-    state 	ENUM ('VALIDATED','NOT VALIDATED', 'CANCELLED') DEFAULT 'NOT VALIDATED'
+    state 	ENUM ('VALIDATED','NOT VALIDATED', 'CANCELLED') DEFAULT 'NOT VALIDATED',
+    id_person INT NOT NULL,
+    CONSTRAINT fk_person FOREIGN KEY (id_person) REFERENCES persons(id_person)
 );
 
 CREATE TABLE detail_sale(
@@ -42,9 +44,7 @@ CREATE TABLE detail_sale(
     price 		   DOUBLE NOT NULL,
     id_product 	   INT NOT NULL,
     id_sale 	   INT NOT NULL,
-    id_person 	   INT NOT NULL,
 
     CONSTRAINT fk_product FOREIGN KEY (id_product) REFERENCES products(id_product),
-    CONSTRAINT fk_sale FOREIGN KEY (id_sale) REFERENCES sales(id_sale),
-    CONSTRAINT fk_person FOREIGN KEY (id_person) REFERENCES persons(id_person)
+    CONSTRAINT fk_sale FOREIGN KEY (id_sale) REFERENCES sales(id_sale)
 );
