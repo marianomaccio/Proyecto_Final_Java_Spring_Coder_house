@@ -30,7 +30,6 @@ public class PersonService {
     }
 
     public Person updatePersonById(long id, Person person) {
-        //validar person
         Person personResponse = personRepository.findById(id).orElseThrow(()->(new RuntimeException("Invalid Person")));
         personResponse.setName(person.getName());
         personResponse.setSurname(person.getSurname());
@@ -43,7 +42,6 @@ public class PersonService {
     }
 
     public Person createPerson(Person person) {
-        //validar person
         personRepository.save(person);
         return person;
     }

@@ -2,7 +2,6 @@ package com.coderhouse.app.controller;
 
 import com.coderhouse.app.dto.ItemDto;
 import com.coderhouse.app.entity.Item;
-import com.coderhouse.app.entity.Person;
 import com.coderhouse.app.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
     @GetMapping("/{id}")
-    public ResponseEntity<ItemDto> updateItemById(@PathVariable(name = "id") long id){
+    public ResponseEntity<ItemDto> findItemById(@PathVariable(name = "id") long id){
         return new ResponseEntity<>(this.itemService.findItemById(id), HttpStatus.ACCEPTED);
     }
 

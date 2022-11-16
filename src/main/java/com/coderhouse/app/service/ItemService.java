@@ -25,6 +25,7 @@ public class ItemService {
         //validar person
         Item itemResponse = itemRepository.findById(id).orElseThrow(()->(new RuntimeException("Invalid Item")));
         itemResponse.setDescription(item.getDescription());
+        itemRepository.save(itemResponse);
         return itemResponse;
     }
 
