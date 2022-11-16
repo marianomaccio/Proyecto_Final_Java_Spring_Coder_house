@@ -483,6 +483,20 @@ INSERT INTO sales(
     'VALIDATED',
     5
 );
+
+INSERT INTO sales(
+	id_sale,
+    date,
+    price,
+    state,
+    id_person
+	)VALUES
+(	100,
+	'100-10-10',
+	10000.0,
+    'VALIDATED',
+    5
+);
 INSERT INTO detail_sale(
     quantity,
     price,

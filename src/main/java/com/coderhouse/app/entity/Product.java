@@ -1,9 +1,11 @@
 package com.coderhouse.app.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Data
@@ -32,4 +34,5 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "id_item")
     private Item item;
+
 }
