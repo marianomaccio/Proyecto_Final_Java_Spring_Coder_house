@@ -55,7 +55,7 @@ public class SaleService {
         saleRepository.save(saleResponse);
         return saleResponse;
     }
-/*
+
     public Sale createSale(Sale sale) {
         Sale saleResponse = new Sale();
         saleResponse.setDate(sale.getDate());
@@ -71,8 +71,8 @@ public class SaleService {
             detailSaleService.createDetailSale(p);
         }
 
-        return saleResponse;
-    }*/
+        return saleResponse;}
+
 
     public Sale deleteSaleById(long id) {
         Sale sale= saleRepository.findById(id).orElseThrow(()->(new RuntimeException("Invalid Sale")));
