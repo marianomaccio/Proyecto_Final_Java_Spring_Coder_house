@@ -26,6 +26,7 @@ public class DetailSaleService {
         detailSaleDto.setPrice(detailSale.getPrice());
         detailSaleDto.setTotalPrice(detailSale.getPrice().multiply(BigDecimal.valueOf(detailSale.getQuantity())));
         detailSaleDto.setId_sale(detailSale.getSale().getId());
+        detailSaleDto.setItem(detailSale.getProduct().getItem().getDescription());
         return detailSaleDto;
     }
     public DetailSale updateDetailSaleById(long id, DetailSale detailSale) {

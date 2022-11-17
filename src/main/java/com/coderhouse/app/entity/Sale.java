@@ -29,7 +29,8 @@ public class Sale {
     @ManyToOne
     @JoinColumn(name = "id_person")
     private Person person;
-    @JsonIgnore
-    @OneToMany(mappedBy = "sale", cascade = CascadeType.ALL)
+
+
+    @OneToMany(mappedBy = "sale")
     private List<DetailSale> detailSaleList;
 }

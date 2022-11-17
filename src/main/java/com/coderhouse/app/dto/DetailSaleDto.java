@@ -1,14 +1,13 @@
 package com.coderhouse.app.dto;
 
-import com.coderhouse.app.entity.Product;
-import com.coderhouse.app.entity.Sale;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class DetailSaleDto {
 
@@ -21,4 +20,6 @@ public class DetailSaleDto {
     private BigDecimal totalPrice;
 
     private long id_sale;
+    @JsonIgnore
+    private String item;
 }
