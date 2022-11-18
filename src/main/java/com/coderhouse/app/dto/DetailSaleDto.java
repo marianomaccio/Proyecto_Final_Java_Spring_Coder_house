@@ -20,6 +20,6 @@ public class DetailSaleDto {
     private BigDecimal totalPrice;
 
     private long id_sale;
-    @JsonIgnore
+
     private String item;
 }

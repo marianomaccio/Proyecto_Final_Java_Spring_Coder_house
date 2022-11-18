@@ -35,4 +35,8 @@ public class Product {
     @JoinColumn(name = "id_item")
     private Item item;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE)
+    private List<DetailSale> detailSaleList;
+
 }

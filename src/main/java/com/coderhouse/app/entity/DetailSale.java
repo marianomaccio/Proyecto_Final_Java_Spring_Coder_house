@@ -1,6 +1,7 @@
 package com.coderhouse.app.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -24,7 +25,7 @@ public class DetailSale {
     @ManyToOne
     @JoinColumn(name = "id_product")
     private Product product;
-
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "id_sale")
     private Sale sale;

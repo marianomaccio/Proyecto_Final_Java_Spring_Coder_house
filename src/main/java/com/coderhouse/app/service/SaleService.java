@@ -63,15 +63,23 @@ public class SaleService {
         saleResponse.setState(sale.getState());
         saleResponse.setPerson(sale.getPerson());
         saleRepository.save(saleResponse);
-        List<DetailSale> list = new ArrayList<>();
         saleResponse.setDetailSaleList(sale.getDetailSaleList());
         long id = saleResponse.getId();
-        sale.getDetailSaleList().stream().forEach(p-> p.getSale().setId(id));
-        for ( DetailSale p: sale.getDetailSaleList()) {
+        sale.setId(saleResponse.getId());
+        List<DetailSale> detailSale = saleResponse.getDetailSaleList();
+        Sale sale1 = new Sale();
+        sale1.setId(saleResponse.getId());
+        sale1.setDate(saleResponse.getDate());
+        sale1.setPrice(saleResponse.getPrice());
+        sale1.setState(saleResponse.getState());
+        sale1.setPerson(saleResponse.getPerson());
+        detailSale.stream().forEach(p->p.setSale(sale1));
+        for ( DetailSale p: detailSale) {
             detailSaleService.createDetailSale(p);
         }
 
-        return saleResponse;}
+        return saleResponse;
+    }
 
 
     public Sale deleteSaleById(long id) {
