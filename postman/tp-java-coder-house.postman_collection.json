@@ -506,7 +506,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\": \"0100-10-10\",\r\n    \"price\": 10000.0,       \r\n    \"quantity\": 1,    \r\n    \"state\":\"VALIDATED\",\r\n    \"person\":{\r\n        \"id\":5,\r\n    \"name\": \"Galadriel \",\r\n    \"surname\": \"Artanis\",\r\n        \"identityDocument\":\"123456890\",\r\n    \"adress\": \"Tirion\",\r\n        \"dateBirth\": \"1993-10-29\",\r\n    \"state\": \"VALIDATED\"\r\n},\r\n\"detailSaleList\": \r\n    [{\r\n    \"quantity\":2,\r\n    \"price\": 20000.0,\r\n    \"product\":{\r\n        \"id\": 19,\r\n        \"name\": \"Gold necklace\",\r\n        \"description\": \"Jewelry\",\r\n        \"sku\": 987556,\r\n        \"stock\": 15,\r\n        \"price\": 10000.0,\r\n        \"item\":  {\r\n        \"id\": 1,\r\n        \"description\": \"Jewelry\"}\r\n        \r\n    }\r\n}]}\r\n    \r\n",
+							"raw": "{\r\n    \"date\": \"0100-10-10\",\r\n    \"price\": 10000.0,       \r\n    \"quantity\": 1,    \r\n    \"state\":\"NOT VALIDATED\",\r\n    \"person\":{\r\n        \"id\":5,\r\n    \"name\": \"Galadriel \",\r\n    \"surname\": \"Artanis\",\r\n        \"identityDocument\":\"123456890\",\r\n    \"adress\": \"Tirion\",\r\n        \"dateBirth\": \"1993-10-29\",\r\n    \"state\": \"VALIDATED\"\r\n},\r\n\"detailSaleList\": \r\n    [{\r\n    \"quantity\":2,\r\n    \"price\": 20000.0,\r\n    \"product\":{\r\n        \"id\": 19,\r\n        \"name\": \"Gold necklace\",\r\n        \"description\": \"Jewelry\",\r\n        \"sku\": 987556,\r\n        \"stock\": 15,\r\n        \"price\": 10000.0,\r\n        \"item\":  {\r\n        \"id\": 1,\r\n        \"description\": \"Jewelry\"}\r\n        \r\n    }\r\n}]}\r\n    \r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -534,7 +534,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"quantity\": 1,\r\n    \"price\": 10000.0,\r\n    \"product\": {\r\n        \"id\": 19,\r\n        \"name\": \"Gold necklace\",\r\n        \"description\": \"Jewelry\",\r\n        \"sku\": 987556,\r\n        \"stock\": 15,\r\n        \"price\": 10000.0,\r\n        \"item\":  {\r\n        \"id\": 1,\r\n        \"description\": \"Jewelry\"\r\n    }\r\n    },\r\n    \"sale\":{\"id\":100,\r\n    \"date\": \"0100-10-10\",\r\n    \"price\": 10000.0,\r\n    \"state\":\"VALIDATED\",\r\n    \"person\":{\r\n        \"id\":5,\r\n    \"name\": \"Galadriel \",\r\n    \"surname\": \"Artanis\",\r\n    \"age\": 29,\r\n    \"adress\": \"Tirion\",\r\n    \"state\": \"VALIDATED\"\r\n}\r\n    }\r\n}",
+							"raw": "{\r\n    \"date\": \"0100-10-10\",\r\n    \"price\": 10000.0,       \r\n    \"quantity\": 1,    \r\n    \"state\":\"VALIDATED\",\r\n    \"person\":{\r\n        \"id\":5,\r\n    \"name\": \"Galadriel \",\r\n    \"surname\": \"Artanis\",\r\n        \"identityDocument\":\"123456890\",\r\n    \"adress\": \"Tirion\",\r\n        \"dateBirth\": \"1993-10-29\",\r\n    \"state\": \"VALIDATED\"\r\n},\r\n\"detailSaleList\": \r\n    [{\r\n    \"quantity\":2,\r\n    \"price\": 20000.0,\r\n    \"product\":{\r\n        \"id\": 19,\r\n        \"name\": \"Gold necklace\",\r\n        \"description\": \"Jewelry\",\r\n        \"sku\": 987556,\r\n        \"stock\": 15,\r\n        \"price\": 10000.0,\r\n        \"item\":  {\r\n        \"id\": 1,\r\n        \"description\": \"Jewelry\"}\r\n        \r\n    }\r\n}]}\r\n    \r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -542,14 +542,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9500/detail/27",
+							"raw": "http://localhost:9500/sale/27",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9500",
 							"path": [
-								"detail",
+								"sale",
 								"27"
 							]
 						}
@@ -562,15 +562,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9500/detail/27",
+							"raw": "http://localhost:9500/sale/136",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "9500",
 							"path": [
-								"detail",
-								"27"
+								"sale",
+								"136"
 							]
 						}
 					},
